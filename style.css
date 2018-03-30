@@ -1,0 +1,35 @@
+body {
+    animation: colorchange 2.5s infinite; /* animation-name followed by duration in seconds*/
+       /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchange 2.5s infinite; /* Chrome and Safari */
+  }
+
+  @keyframes colorchange
+  {
+    0%   {background: rgba(243, 1, 1, 0.5);}
+    50%  {background: rgba(5, 151, 12, 0.5);}
+    100% {background: rgba(44, 3, 138, 0.5);}
+  }
+
+  @-webkit-keyframes colorchange /* Safari ზე და Chrome ზე ამის გარეშე ვერ მუშაობსო */
+  {
+    from   {background: rgba(177, 11, 11, 0.5);}
+    to {background: rgba(10, 11, 73, 0.5);}
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.info{
+text-align: center;
+background: -webkit-repeating-radial-gradient(#e66465, #9198e5);
+color: chartreuse;
+font-size: 200%
+}
+.image{
+
+    background:-moz-repeating-linear-gradient(#e66465, #9198e5)
+}
